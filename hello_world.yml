@@ -3,7 +3,7 @@
   gather_facts: no
   connection: local
   tasks:
-    - name: Hello Message
+    - name: Show me my variables
       debug:
-        msg: "Hello World!"
+        msg: "{{ hostvars[inventory_name] }}"
 
