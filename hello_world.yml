@@ -3,7 +3,10 @@
   gather_facts: no
   connection: local
   tasks:
-    - name: Show me my variables
+    - name: Show java variables
       debug:
-        msg: "{{ hostvars[inventory_hostname] }}"
+        msg: "{{ java_home }}"
+    - name: show me weblogic variables
+      debug:
+        msg: "{{ weblogic_home }}"
 
