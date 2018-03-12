@@ -5,5 +5,5 @@
   tasks:
     - name: Show me my variables
       debug:
-        msg: "{{ hostvars[inventory_name] }}"
+        msg: "{{ hostvars[inventory_hostname] }}"
 
